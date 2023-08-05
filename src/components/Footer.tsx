@@ -2,6 +2,7 @@
 
 import { Container, Stack, Box, SimpleGrid, Flex, Text, Link } from "@chakra-ui/react"
 import Logo from "./Logo"
+import { INFO_ITEMS, MENU_ITEMS, SOCIALS_ITEMS } from "@/data/data"
 
 const ListHeader = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -15,6 +16,7 @@ const Footer = () => {
   return (
     <Stack
       bg='bg.100'
+      as='footer'
     >
       <Container
         maxW="container.xl"
@@ -23,42 +25,52 @@ const Footer = () => {
           minH='15vh'
           my={10}
         >
-          <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
+          <SimpleGrid columns={{ base: 2, md: 4 }} spacing={8}>
             <Stack align={'flex-start'}>
               <ListHeader>Contacto</ListHeader>
-              <Link variant='footer' as="a" href={'#'}>
-              About Us
-              </Link>
-              <Link variant='footer' as="a" href={'#'}>
-              Press
-              </Link>
-              <Link variant='footer' as="a" href={'#'}>
-              Careers
-              </Link>
-              <Link variant='footer' as="a" href={'#'}>
-              Contact Us
-              </Link>
-              <Link variant='footer' as="a" href={'#'}>
-              Partners
-              </Link>
+              {
+                INFO_ITEMS.map((item) => (
+                  <Link
+                    key={item.id}
+                    variant='footer'
+                    as="a"
+                    target='_blank'
+                    href={item.href}
+                  >
+                    {item.title}
+                  </Link>
+                ))
+              }
             </Stack>
             <Stack align={'flex-start'}>
               <ListHeader>Navegación</ListHeader>
-              <Link variant='footer' as="a" href={'#'}>
-              About Us
-              </Link>
-              <Link variant='footer' as="a" href={'#'}>
-              Press
-              </Link>
-              <Link variant='footer' as="a" href={'#'}>
-              Careers
-              </Link>
-              <Link variant='footer' as="a" href={'#'}>
-              Contact Us
-              </Link>
-              <Link variant='footer' as="a" href={'#'}>
-              Partners
-              </Link>
+              {
+                MENU_ITEMS.map((item) => (
+                  <Link
+                    key={item.id}
+                    variant='footer'
+                    as="a"
+                    href={item.href}
+                  >
+                    {item.label}
+                  </Link>
+                ))
+              }
+            </Stack>
+            <Stack align={'flex-start'}>
+              <ListHeader>Redes</ListHeader>
+              {
+                SOCIALS_ITEMS.map((item) => (
+                  <Link
+                    key={item.id}
+                    variant='footer'
+                    as="a"
+                    href={item.href}
+                  >
+                    {item.title}
+                  </Link>
+                ))
+              }
             </Stack>
           </SimpleGrid>
         </Stack>
@@ -83,8 +95,8 @@ const Footer = () => {
           <Logo />
         </Flex>
         <Text pt={6} fontSize={'sm'} textAlign={'center'}>
-          © 2023 Todos los derechos reservados. Comuna de Zavalla | Desarrollado por{' '}
-          <Link>Cuppy páginas web</Link>
+          © 2023 Todos los derechos reservados. Comuna de Zavalla | Diseño y desarrollo{' '}
+          <Link href='https://cuppypaginasweb.com' target="_blank">Cuppy páginas web</Link>
         </Text>
 
       </Box>

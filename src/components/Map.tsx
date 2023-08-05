@@ -18,7 +18,18 @@ const Map = () => {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <Marker position={[-33.021178, -60.881400]} icon={new Icon({ iconUrl : '/icons/map-marker-4.svg', iconSize: [50, 70], iconAnchor: [23, 60] })}>
+      <Marker
+        position={[-33.021178, -60.881400]}
+        icon={
+          new Icon({
+            iconUrl : '/icons/map-marker-4.svg',
+            iconSize: [50, 70],
+            iconAnchor: [23, 60],
+            shadowUrl: '/icons/marker-shadow.png',
+            shadowSize: [25, 30],
+            shadowAnchor: [0, 30],
+          })}
+      >
       </Marker>
     </MapContainer>
   );

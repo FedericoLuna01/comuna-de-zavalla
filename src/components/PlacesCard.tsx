@@ -1,18 +1,24 @@
 import { Stack, Text, Heading } from "@chakra-ui/react";
 import Image from "next/image";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 interface PlacesCardProps {
   direction?: 'row' | 'row-reverse'
 }
 
 const PlacesCard = ({ direction = 'row' }: PlacesCardProps) => {
+
   return (
     <Stack
-      direction={direction}
+      direction={{ base: 'column', lg: direction }}
       gap={16}
-      pos='relative'
+      align='center'
     >
-      <Stack>
+      <Stack
+        w={{ base: '100%', md: '50%', lg: '100%' }}
+        align='center'
+        justify='center'
+      >
         <Image
           src='/parque-villarino.jpg'
           alt='Parque villarino'
@@ -37,11 +43,9 @@ const PlacesCard = ({ direction = 'row' }: PlacesCardProps) => {
             direction='row'
             align='center'
           >
-            <Image
-              src='/icons/map-marker-4.svg'
-              alt='Map marker'
-              width={20}
-              height={20}
+            <FaMapMarkerAlt
+              size={20}
+              color='#4a5568'
             />
             <Text
               color='gray.600'

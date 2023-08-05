@@ -2,7 +2,7 @@
 
 import Map from "@/components/Map"
 import { INFO_ITEMS } from "@/data/data"
-import { Container, Grid, GridItem, Heading, Stack, Text } from "@chakra-ui/react"
+import { Container, Heading, Stack, StackDivider, Text } from "@chakra-ui/react"
 
 const Contact = () => {
   return (
@@ -14,80 +14,54 @@ const Contact = () => {
         maxW='container.xl'
       >
         <Stack
-          minH='100vh'
           align='center'
           justify='center'
+          py='20vh'
         >
           <Heading
             variant='title'
+            as='h1'
+            textDecorationColor='logoPurple.100'
+            textAlign='center'
           >
             Contacto
           </Heading>
-          <Grid
-            templateColumns='repeat(3, 1fr)'
-            gap={8}
-            w='100%'
-          >
-            <GridItem colSpan={1}>
-              <Stack
-                bg='primary.100'
-                borderRadius='.7rem'
-                p={5}
-                gap={4}
-              >
-                {
-                  INFO_ITEMS.map(({ icon, id, label, title }) => (
-                    <Stack
-                      key={id}
-                      gap={1}
-                    >
-                      <Heading
-                        as='h3'
-                        fontSize='1.5rem'
-                      >
-                        {title}
-                      </Heading>
-                      <Stack
-                        direction='row'
-                        align='center'
-                      >
-                        {icon}
-                        <Text>
-                          {label}
-                        </Text>
-                      </Stack>
-                    </Stack>
-                  ))
-                }
-              </Stack>
-            </GridItem>
-            <GridItem colSpan={2}>
-              <Stack
-                w='100%'
-                h='100%'
-              >
-                <Map />
-              </Stack>
-            </GridItem>
-          </Grid>
           <Stack
             direction='row'
-            w='100%'
-            justify='space-between'
+            divider={<StackDivider />}
+            pb={12}
+            gap={8}
+            wrap='wrap'
+            justify='center'
           >
-            {/* <Stack
-              bg='primary.100'
-              w='500px'
-              h='500px'
-            >
-
-            </Stack>
-            <Stack
-              w='500px'
-              h='500px'
-            >
-              <Map />
-            </Stack> */}
+            {
+              INFO_ITEMS.map(({ icon, id, label, title }) => (
+                <Stack
+                  key={id}
+                  align='center'
+                  justify='center'
+                  maxW='200px'
+                  textAlign='center'
+                >
+                  {icon}
+                  <Heading
+                    as='h3'
+                    size='md'
+                  >
+                    {title}
+                  </Heading>
+                  <Text>
+                    {label}
+                  </Text>
+                </Stack>
+              ))
+            }
+          </Stack>
+          <Stack
+            w='100%'
+            h='30vh'
+          >
+            <Map />
           </Stack>
         </Stack>
       </Container>

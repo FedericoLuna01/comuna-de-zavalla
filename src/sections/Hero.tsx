@@ -2,6 +2,21 @@
 
 import { Button, Heading, Highlight, Stack, Text } from "@chakra-ui/react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
+const arrowVariants = {
+  animate: {
+    y: [0, 10, 0],
+    transition: {
+      y: {
+        repeat: Infinity,
+        repeatType: "loop",
+        duration: 2,
+        ease: "linear",
+      },
+    },
+  }
+}
 
 const Hero = () => {
   return (
@@ -9,6 +24,7 @@ const Hero = () => {
       as='section'
       bg='bg.200'
       id='inicio'
+      mb='20vh'
     >
       <Stack
         minH='100vh'
@@ -53,10 +69,10 @@ const Hero = () => {
             <Text
               fontSize='1.1rem'
             >
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas debitis culpa excepturi aperiam non laboriosam
-            asperiores quibusdam maxime. Repudiandae, possimus.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas debitis culpa excepturi aperiam non laboriosam
-            asperiores quibusdam maxime. Repudiandae, possimus.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas debitis culpa excepturi aperiam non laboriosam
+              asperiores quibusdam maxime. Repudiandae, possimus.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas debitis culpa excepturi aperiam non laboriosam
+              asperiores quibusdam maxime. Repudiandae, possimus.
             </Text>
             <Button
               as='a'
@@ -71,41 +87,48 @@ const Hero = () => {
         </Stack>
         <Stack
           w='50%'
-          pos='relative'
-          overflow='hidden'
+          align='center'
+        >
+          <Image
+            src='https://images.unsplash.com/photo-1682686580036-b5e25932ce9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1075&q=80'
+            alt='Comuna de Zavalla'
+            width={400}
+            height={400}
+          />
+          <Image
+            src='https://images.unsplash.com/photo-1682686580036-b5e25932ce9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1075&q=80'
+            alt='Comuna de Zavalla'
+            width={400}
+            height={400}
+          />
+          <Image
+            src='https://images.unsplash.com/photo-1682686580036-b5e25932ce9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1075&q=80'
+            alt='Comuna de Zavalla'
+            width={400}
+            height={400}
+          />
+        </Stack>
+        <motion.div
+          variants={arrowVariants}
+          animate='animate'
+          style={{
+            transform: 'translate(0, -50%)',
+            position: 'absolute',
+            bottom: '3rem'
+          }}
         >
           <Stack
-            pos='absolute'
-            right='90%'
-            top='-20%'
-            zIndex={1}
-            height='1500px'
-            width='600px'
-            bgColor='bg.100'
-            borderRadius='50%'
-          />
-          <Image
-            src='/comuna-de-zavalla.png'
-            alt='Comuna de Zavalla'
-            width={600}
-            height={600}
-            style={{
-              zIndex: 0
-            }}
-          />
-        </Stack>
-        <Stack
-          pos='absolute'
-          bottom={10}
-          zIndex={3}
-        >
-          <Image
-            src='/icons/double-arrow-down.svg'
-            alt='Scroll down'
-            width={50}
-            height={50}
-          />
-        </Stack>
+            as='a'
+            href='#lugares'
+          >
+            <Image
+              src='/icons/double-arrow-down.svg'
+              alt='Scroll down'
+              width={50}
+              height={50}
+            />
+          </Stack>
+        </motion.div>
       </Stack>
     </Stack>
   );

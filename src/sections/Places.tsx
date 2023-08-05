@@ -2,6 +2,7 @@
 
 import MulticolorDivider from "@/components/MulticolorDivider"
 import PlacesCard from "@/components/PlacesCard"
+import Reveal from "@/components/Reveals/Reveal"
 import { Container, Heading, Stack } from "@chakra-ui/react"
 
 const Places = () => {
@@ -17,11 +18,12 @@ const Places = () => {
           minH='100vh'
           align='center'
           justify='center'
-          py='20vh'
+          my='20vh'
         >
           <Heading
             as='h1'
             variant='title'
+            textDecorationColor='logoRed.100'
             textAlign='center'
           >
             Lugares en Zavalla
@@ -29,8 +31,12 @@ const Places = () => {
           <Stack
             gap={12}
           >
-            <PlacesCard
-            />
+            <Reveal
+              side='right'
+            >
+              <PlacesCard
+              />
+            </Reveal>
             <MulticolorDivider />
             <PlacesCard
               direction='row-reverse'

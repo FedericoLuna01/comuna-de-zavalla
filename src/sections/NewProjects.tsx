@@ -13,22 +13,24 @@ const NewProjects = () => {
         maxW='container.xl'
       >
         <Stack
-          minH='100vh'
           align='center'
           justify='center'
+          my='20vh'
         >
           <Heading
             as='h1'
             variant='title'
+            textDecorationColor='logoYellow.100'
+            textAlign='center'
           >
             Últimos Proyectos
           </Heading>
           <Stack
-            direction='row'
-            gap={10}
-            wrap='wrap'
-            justify='space-between'
             w='100%'
+            gap={12}
+            direction='row'
+            wrap='wrap'
+            justify='center'
           >
             <ProjectsCard />
             <ProjectsCard />

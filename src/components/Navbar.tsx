@@ -1,8 +1,8 @@
 'use client'
 
-import { Container, Stack, Link } from "@chakra-ui/react";
+import { Container, Stack } from "@chakra-ui/react";
 import Logo from "./Logo";
-import { MENU_ITEMS } from "@/data/data";
+import Nav from "./Nav";
 
 const Navbar = () => {
   return (
@@ -14,7 +14,7 @@ const Navbar = () => {
       borderBottom='2px solid'
       borderColor='primary.100'
       as='header'
-      zIndex='999999'
+      zIndex='1000'
     >
       <Container
         maxW='container.xl'
@@ -27,22 +27,7 @@ const Navbar = () => {
           h='100%'
         >
           <Logo />
-          <Stack
-            as='nav'
-            direction='row'
-            gap={8}
-          >
-            {
-              MENU_ITEMS.map(({ href, id, label }) => (
-                <Link
-                  key={id}
-                  href={href}
-                >
-                  {label}
-                </Link>
-              ))
-            }
-          </Stack>
+          <Nav />
         </Stack>
       </Container>
     </Stack>

@@ -59,6 +59,7 @@ export const theme = extendTheme({
       variants: {
         'footer': {
           fontWeight: 'normal',
+          color: 'gray.600',
         }
       }
     },
@@ -102,7 +103,7 @@ export const theme = extendTheme({
       variants: {
         'title': {
           textDecoration: 'underline',
-          textDecorationColor: 'primary.100',
+          // textDecorationColor: 'primary.100',
           textUnderlineOffset: 5,
           fontSize: '5xl',
           marginBottom: '5rem',

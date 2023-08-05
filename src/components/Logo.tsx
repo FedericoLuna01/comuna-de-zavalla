@@ -1,25 +1,30 @@
 import { Heading, Stack } from "@chakra-ui/react";
+import Link from "next/link";
 
 const Logo = () => {
   return (
-    <Stack
-      direction='row'
-      align='center'
+    <Link
+      href='/'
     >
       <Stack
-        w='40px'
-        h='40px'
-        bg='black'
-        borderRadius='10px'
-      />
-      <Heading
-        fontSize='lg'
-        maxW='100px'
-        textAlign='center'
+        direction='row'
+        align='center'
       >
-        Comuna de Zavalla
-      </Heading>
-    </Stack>
+        <Stack
+          w='40px'
+          h='40px'
+          bg='black'
+          borderRadius='10px'
+        />
+        <Heading
+          fontSize='lg'
+          maxW='100px'
+          textAlign='center'
+        >
+          Comuna de Zavalla
+        </Heading>
+      </Stack>
+    </Link>
   );
 }
 
