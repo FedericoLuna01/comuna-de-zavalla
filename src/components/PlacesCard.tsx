@@ -1,3 +1,5 @@
+'use client'
+
 import { Stack, Text, Heading } from "@chakra-ui/react";
 import Image from "next/image";
 import { FaMapMarkerAlt } from "react-icons/fa";

@@ -1,3 +1,5 @@
+'use client'
+
 import { Container, Heading, Stack, Text } from "@chakra-ui/react";
 import Image from "next/image";
 

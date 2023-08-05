@@ -1,3 +1,5 @@
+'use client'
+
 import { MENU_ITEMS } from "@/data/data";
 import { Stack, Link as ChakraLink } from "@chakra-ui/react";
 import Link from "next/link";
