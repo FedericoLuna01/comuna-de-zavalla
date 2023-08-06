@@ -1,5 +1,3 @@
-'use client'
-
 import { Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, Show, Stack, useDisclosure } from "@chakra-ui/react";
 import Menu from "./Menu";
 import Logo from "./Logo";

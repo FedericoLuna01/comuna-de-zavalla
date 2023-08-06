@@ -1,8 +1,10 @@
 'use client'
 
-import Map from "@/components/Map"
 import { INFO_ITEMS } from "@/data/data"
 import { Container, Heading, Stack, StackDivider, Text } from "@chakra-ui/react"
+import dynamic from "next/dynamic"
+
+const Map = dynamic(() => import('../components/Map'), { ssr: false })
 
 const Contact = () => {
   return (

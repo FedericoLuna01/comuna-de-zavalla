@@ -1,5 +1,3 @@
-'use client'
-
 import { Stack } from "@chakra-ui/react";
 
 const MulticolorDivider = () => {
