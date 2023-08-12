@@ -66,13 +66,13 @@ const Socials = () => {
         justify='center'
       >
         <SocialButton
-          href='https://www.instagram.com/eribinoshn/'
+          href='https://www.instagram.com/comunazavalla/'
           image='/instagram.svg'
           label='@ComunaDeZavalla'
           alt='Instagram Logo'
         />
         <SocialButton
-          href='https://www.facebook.com/eribinos'
+          href='https://www.facebook.com/ComunaDeZavalla'
           image='/facebook.svg'
           label='Comuna de Zavalla'
           alt='Facebook Logo'
