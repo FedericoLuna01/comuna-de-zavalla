@@ -43,6 +43,7 @@ const Contact = () => {
                   align='center'
                   justify='center'
                   maxW='200px'
+                  maxH='180px'
                   textAlign='center'
                 >
                   {icon}

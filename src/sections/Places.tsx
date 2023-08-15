@@ -2,7 +2,6 @@
 
 import MulticolorDivider from "@/components/MulticolorDivider"
 import PlacesCard from "@/components/PlacesCard"
-import Reveal from "@/components/Reveals/Reveal"
 import { Container, Heading, Stack } from "@chakra-ui/react"
 
 const Places = () => {
@@ -31,12 +30,8 @@ const Places = () => {
           <Stack
             gap={12}
           >
-            <Reveal
-              side='right'
-            >
-              <PlacesCard
-              />
-            </Reveal>
+            <PlacesCard
+            />
             <MulticolorDivider />
             <PlacesCard
               direction='row-reverse'

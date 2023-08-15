@@ -12,6 +12,10 @@ export const theme = extendTheme({
       body: {
         overflowX: 'hidden',
       },
+      '.image': {
+        borderRadius: '10px',
+        boxShadow: `5px 5px 0 #C4D42D`,
+      }
       // '::-webkit-scrollbar': {
       //   width: '.75rem',
       //   background: 'bg.100'

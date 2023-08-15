@@ -1,92 +1,60 @@
 'use client'
 
-import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Container, Heading, Stack, Text } from "@chakra-ui/react"
-
-const ACCORDION_ITEMS = [
-  {
-    id: 1,
-    title: 'Cuál es el horario de atención?',
-    content: 'De lunes a viernes de 7 a 13hs',
-    color: 'primary.100'
-  },
-  {
-    id: 2,
-    title: 'Hay un número de atención?',
-    content: 'Si, podés llamar al 3416515933',
-    color: 'primary.100'
-  },
-  {
-    id: 3,
-    title: 'Que documentación necesito?',
-    content: 'Necesitas llevar una fotocopia de tu DNI, frente y dorso, y tu carnet de conducir',
-    color: 'primary.100'
-  },
-  {
-    id: 4,
-    title: 'A donde debo ir?',
-    content: 'Bv. Terugi y Moreno, en el galpón',
-    color: 'primary.100'
-  },
-]
+import LicenciaInfo from "@/sections/LicenciaInfo"
+import { Container, Heading, Stack, Text } from "@chakra-ui/react"
+import Image from "next/image"
 
 const page = () => {
   return (
-    <Stack
-      as='section'
-    >
-      <Container
-        maxW='container.xl'
+    <>
+      <Stack
+        as='section'
       >
-        <Stack
-          align='center'
-          justify='center'
-          minH='100vh'
-          mt={12}
+        <Container
+          maxW='container.xl'
         >
           <Stack
-            direction='row'
-            w='100%'
-            justify='space-between'
             align='center'
+            justify='space-between'
+            minH='70vh'
+            direction={{ base: 'column', lg:'row' }}
+            py={{ base: '10vh', lg: 0 }}
+            gap={{ base: 14, lg: 0 }}
           >
             <Stack
-              w='50%'
+              justify={{ base: 'flex-start', lg: 'center' }}
+              maxW='550px'
+              textAlign={{ base: 'center', lg: 'left' }}
             >
               <Heading
+                as='h1'
+                fontSize='6xl'
+                lineHeight={1}
               >
-                Tu licencia de conducir
+                      Obtené tu licencia de conducir
               </Heading>
-              <Text>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptate tempore officia impedit eveniet tenetur maxime ad facilis natus ea fugiat consequuntur hic iure placeat amet expedita iste, itaque dignissimos quia vitae ipsum totam blanditiis quos? Error, quidem incidunt! Fuga?
+              <Text
+                fontSize='1.1rem'
+              >
+                    Con la inaguración de el Centro de Otorgamiento de Licencias de conducir ahora vas a poder obtener tu licencia de conducir en Zavalla.
+                    En esta sección vas a encontrar toda la información necesaria para obtenerla.
               </Text>
             </Stack>
-            <Stack
-              w={400}
-              h={800}
-              align='center'
-              justify='center'
-            >
-              <video style={{
-                boxShadow: `5px 5px 0 #C4D42D`,
-              }} src="/turnos-carnet.mp4" controls></video>
-            </Stack>
-          </Stack>
-          <Stack
-            align='center'
-            py='20vh'
-          >
-            <Heading
-              textAlign='center'
-            >
-              Todo lo que necesitas saber
-            </Heading>
             <Stack>
-
+              <Image
+                src='/grupal.jpg'
+                alt='Grupal'
+                width={500}
+                height={500}
+                className="image"
+              />
             </Stack>
           </Stack>
-        </Stack>
-      </Container>
-    </Stack>
+        </Container>
+      </Stack>
+      <LicenciaInfo />
+    </>
+
   )
 }
 

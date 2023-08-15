@@ -24,10 +24,7 @@ const PlacesCard = ({ direction = 'row' }: PlacesCardProps) => {
           alt='Parque villarino'
           width={1000}
           height={700}
-          style={{
-            borderRadius: '10px',
-            boxShadow: `5px 5px 0 #C4D42D`,
-          }}
+          className='image'
         />
       </Stack>
       <Stack
