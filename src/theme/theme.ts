@@ -16,14 +16,6 @@ export const theme = extendTheme({
         borderRadius: '10px',
         boxShadow: `5px 5px 0 #C4D42D`,
       }
-      // '::-webkit-scrollbar': {
-      //   width: '.75rem',
-      //   background: 'bg.100'
-      // },
-      // '::-webkit-scrollbar-thumb': {
-      //   background: 'bg.200',
-      //   borderRadius: '10px',
-      // },
     }
   },
   colors: {
@@ -107,7 +99,6 @@ export const theme = extendTheme({
       variants: {
         'title': {
           textDecoration: 'underline',
-          // textDecorationColor: 'primary.100',
           textUnderlineOffset: 5,
           fontSize: '5xl',
           marginBottom: '5rem',

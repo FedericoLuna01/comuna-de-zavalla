@@ -18,7 +18,7 @@ const page = () => {
             justify='space-between'
             minH='70vh'
             direction={{ base: 'column', lg:'row' }}
-            py={{ base: '10vh', lg: 0 }}
+            py={{ base: '15vh', lg: 0 }}
             gap={{ base: 14, lg: 0 }}
           >
             <Stack
@@ -28,13 +28,13 @@ const page = () => {
             >
               <Heading
                 as='h1'
-                fontSize='6xl'
+                fontSize={{ base: '4xl', lg: '6xl' }}
                 lineHeight={1}
               >
                       Obtené tu licencia de conducir
               </Heading>
               <Text
-                fontSize='1.1rem'
+                fontSize={{ base: '1rem', lg: '1.1rem' }}
               >
                     Con la inaguración de el Centro de Otorgamiento de Licencias de conducir ahora vas a poder obtener tu licencia de conducir en Zavalla.
                     En esta sección vas a encontrar toda la información necesaria para obtenerla.

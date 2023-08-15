@@ -49,7 +49,7 @@ const LicenciaInfo = () => {
                       <Text
                         fontSize='1.5rem'
                         fontWeight='bold'
-                      >in
+                      >
                         {id}
                       </Text>
                     </Stack>
