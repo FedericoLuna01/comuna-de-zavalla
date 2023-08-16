@@ -42,7 +42,7 @@ const page = () => {
             </Stack>
             <Stack>
               <Image
-                src='/grupal.jpg'
+                src='/licencia.jpg'
                 alt='Grupal'
                 width={500}
                 height={500}

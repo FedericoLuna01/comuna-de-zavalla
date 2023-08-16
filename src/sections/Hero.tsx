@@ -28,13 +28,13 @@ const Hero = () => {
     >
       <Stack
         minH='100vh'
-        direction={{ sm: 'column', md: 'row' }}
+        direction={{ base: 'column', md: 'row' }}
         align='center'
         justify='center'
         pos='relative'
       >
         <Stack
-          w='50%'
+          w={{ base: '100%', md: '50%' }}
           align='center'
           pl='5rem'
         >
@@ -86,7 +86,7 @@ const Hero = () => {
           </Stack>
         </Stack>
         <Stack
-          w='50%'
+          w={{ base: '100%', md: '50%' }}
           align='center'
         >
           <Image
