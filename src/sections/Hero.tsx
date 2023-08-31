@@ -61,7 +61,7 @@ const Hero = () => {
                     color: 'primary.100',
                   }}
                 >
-                  Bienvenido a la
+                  Bienvenidos a la
                   Comuna de Zavalla
                 </Highlight>
               </Heading>
@@ -69,10 +69,9 @@ const Hero = () => {
             <Text
               fontSize='1.1rem'
             >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas debitis culpa excepturi aperiam non laboriosam
-              asperiores quibusdam maxime. Repudiandae, possimus.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas debitis culpa excepturi aperiam non laboriosam
-              asperiores quibusdam maxime. Repudiandae, possimus.
+              Zavalla es una localidad del departamento de Rosario, provincia de Santa Fe.
+              Localizada sobre la RN 33, limita al este con la ciudad de Perez, al oeste con Pujato
+              y se encuentra a 22 KM al sudoeste de la ciudad de Rosario.
             </Text>
             <Button
               as='a'

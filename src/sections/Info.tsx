@@ -24,7 +24,7 @@ const Info = () => {
             textDecorationColor='logoBlue.100'
             textAlign='center'
           >
-            Información útil
+            Teléfonos útiles
           </Heading>
           <Stack
             direction='row'

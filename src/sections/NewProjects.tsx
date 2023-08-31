@@ -23,7 +23,7 @@ const NewProjects = () => {
             textDecorationColor='logoYellow.100'
             textAlign='center'
           >
-            Últimos Proyectos
+            Noticias de la Comuna
           </Heading>
           <Stack
             w='100%'

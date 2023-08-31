@@ -54,7 +54,7 @@ const Socials = () => {
   return (
     <DividerLayout
       title='Nuestras redes sociales'
-      subtitle="Seguinos en nuestras redes sociales para estar al tanto de las ultimas novedades del pueblo."
+      subtitle="Seguinos en nuestras redes para no perderte ninguna novedad del pueblo."
       direction="row-reverse"
       image='/Following-amico-1.svg'
       alt='Following Illustration'

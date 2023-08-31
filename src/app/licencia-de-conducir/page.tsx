@@ -36,8 +36,8 @@ const page = () => {
               <Text
                 fontSize={{ base: '1rem', lg: '1.1rem' }}
               >
-                    Con la inaguración de el Centro de Otorgamiento de Licencias de conducir ahora vas a poder obtener tu licencia de conducir en Zavalla.
-                    En esta sección vas a encontrar toda la información necesaria para obtenerla.
+                Con la inaguración de el Centro de Otorgamiento de Licencias de conducir ahora vas a poder obtener tu licencia de conducir en Zavalla.
+                En esta sección vas a encontrar toda la información necesaria para obtenerla.
               </Text>
             </Stack>
             <Stack>

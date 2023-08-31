@@ -56,6 +56,23 @@ export const MENU_ITEMS = [
   }
 ]
 
+export const PLACES_ITEMS = [
+  {
+    id: 1,
+    title: 'Parque villarino',
+    ubication: '',
+    description: 'Ocupa 100 hectareas. Es un lugar de recreacion, un espacio que se destaca por su biodiversidad. Las arboledas estas conformadas por 160 especies y diversidad de aves. Se puede visitar de lunes a domingos de 6am a 20pm. En el predio del parque se encuentran la Facultad de Ciencias Agrarias y la Escuela Primaria N° 6371',
+    image: ''
+  }
+]
+
+export const NEWS_ITEMS = [
+  {
+    id: 1,
+    title: 'Nueva pagina web',
+  }
+]
+
 export const SOCIALS_ITEMS = [
   {
     id: 1,
@@ -72,26 +89,22 @@ export const SOCIALS_ITEMS = [
 export const LICENCIA_ITEMS = [
   {
     id: 1,
-    title: 'Cuál es el horario de atención?',
-    content: 'De lunes a viernes de 7 a 13hs',
-    color: 'primary.100'
+    title: '¿Cuál es el horario de atención?',
+    content: 'De lunes a viernes de 7 a 13 h.',
   },
   {
     id: 2,
-    title: 'Hay un número de atención?',
-    content: 'Si, podés llamar al 3416515933',
-    color: 'primary.100'
+    title: '¿Hay un número de atención?',
+    content: 'Si, podés llamar al 341 651 5933',
   },
   {
     id: 3,
-    title: 'Que documentación necesito?',
-    content: 'Necesitas llevar una fotocopia de tu DNI, frente y dorso, y tu carnet de conducir',
-    color: 'primary.100'
+    title: '¿Que documentación necesito?',
+    content: 'Necesitas llevar una fotocopia de tu DNI, frente y dorso. En caso de renovación tambien llevá tu carnet de conducir',
   },
   {
     id: 4,
-    title: 'A donde debo ir?',
-    content: 'Bv. Terugi y Moreno, en el galpón',
-    color: 'primary.100'
+    title: '¿A donde debo ir?',
+    content: 'Bv. Teruggi y Moreno, en el Predio del Ferrocarril',
   },
 ]

@@ -2,7 +2,9 @@
 
 import MulticolorDivider from "@/components/MulticolorDivider"
 import PlacesCard from "@/components/PlacesCard"
+import { PLACES_ITEMS } from "@/data/data"
 import { Container, Heading, Stack } from "@chakra-ui/react"
+import React from "react"
 
 const Places = () => {
   return (
@@ -25,20 +27,26 @@ const Places = () => {
             textDecorationColor='logoRed.100'
             textAlign='center'
           >
-            Lugares en Zavalla
+            ¿Que visitar en Zavalla?
           </Heading>
           <Stack
             gap={12}
           >
-            <PlacesCard
-            />
-            <MulticolorDivider />
-            <PlacesCard
-              direction='row-reverse'
-            />
-            <MulticolorDivider />
-            <PlacesCard
-            />
+            {
+              PLACES_ITEMS.map(({ id, title, description, image }) => (
+                <React.Fragment
+                  key={id}
+                >
+                  <PlacesCard
+                    title={title}
+                    description={description}
+                    ubication='Zavalla, Santa Fe'
+                  />
+                  <MulticolorDivider />
+                </React.Fragment>
+              ))
+            }
+
           </Stack>
         </Stack>
       </Container>

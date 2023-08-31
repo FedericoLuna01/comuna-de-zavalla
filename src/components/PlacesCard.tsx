@@ -4,9 +4,12 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 
 interface PlacesCardProps {
   direction?: 'row' | 'row-reverse'
+  title: string
+  description: string
+  ubication: string
 }
 
-const PlacesCard = ({ direction = 'row' }: PlacesCardProps) => {
+const PlacesCard = ({ direction = 'row', title, description, ubication }: PlacesCardProps) => {
 
   return (
     <Stack
@@ -34,7 +37,7 @@ const PlacesCard = ({ direction = 'row' }: PlacesCardProps) => {
           gap={1}
         >
           <Heading>
-            Parque Villarino
+            {title}
           </Heading>
           <Stack
             direction='row'
@@ -47,12 +50,12 @@ const PlacesCard = ({ direction = 'row' }: PlacesCardProps) => {
             <Text
               color='gray.600'
             >
-                  Zavalla, Santa Fe
+              {ubication}
             </Text>
           </Stack>
         </Stack>
         <Text>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, dignissimos! Fugiat deserunt hic voluptatum veritatis quia culpa in aut ad! Hic reprehenderit dolores velit exercitationem commodi fuga molestias inventore fugit distinctio rerum architecto modi omnis voluptatibus aut quibusdam, quidem ullam quia minus asperiores facilis similique ipsa minima ea. Eius, minus.
+          {description}
         </Text>
       </Stack>
     </Stack>

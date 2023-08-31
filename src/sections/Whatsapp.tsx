@@ -8,7 +8,7 @@ const Whatsapp = () => {
   return (
     <DividerLayout
       title='#ZavallaAlDia'
-      subtitle='Escribinos en Whatsapp para estar al tanto de las ultimas novedades del pueblo.'
+      subtitle='Mandanos un mensaje a nuestro Whatsapp para recibir las actividades de la Comuna.'
       image="/zavalla-al-dia.svg"
       alt="Whatsapp Illustration"
       size={280}
