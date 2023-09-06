@@ -1,6 +1,6 @@
 'use client'
 
-import { Button, Container, Heading, Highlight, Stack, Text } from "@chakra-ui/react";
+import { Box, Button, Container, Heading, Highlight, Stack, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -76,12 +76,12 @@ const Hero = () => {
                 fontSize='1.1rem'
               >
                 Zavalla es una localidad del departamento de Rosario, provincia de Santa Fe.
-                Localizada sobre la RN 33, limita al este con la ciudad de Perez, al oeste con Pujato
+                Localizada sobre la RN 33, limita al este con la ciudad de Pérez, al oeste con Pujato
                 y se encuentra a 22 KM al sudoeste de la ciudad de Rosario.
               </Text>
               <Button
                 as='a'
-                href='#'
+                href='#noticias'
                 w='fit-content'
                 size='lg'
                 variant='default'
@@ -95,20 +95,31 @@ const Hero = () => {
             align={{ base: 'center', md: 'flex-end' }}
             gap={{ base: 10, md: 20 }}
           >
-            <Image
-              src='/comuna-de-zavalla.jpg'
-              alt='Comuna de Zavalla'
-              width={500}
-              height={500}
-              className="image"
-            />
-            <Image
-              src='/cartel-de-zavalla.jpg'
-              alt='Cartel de Zavalla'
-              width={500}
-              height={500}
-              className="image"
-            />
+            <Box
+              aspectRatio={16 / 9}
+              width={{ base: '100%', md: '80%' }}
+              position='relative'
+            >
+              <Image
+                src='/comuna-de-zavalla.webp'
+                alt='Comuna de Zavalla'
+                fill
+                className="image"
+              />
+            </Box>
+            <Box
+              aspectRatio={16 / 9}
+              width={{ base: '100%', md: '80%' }}
+              position='relative'
+            >
+              <Image
+                src='/cartel-de-zavalla.webp'
+                alt='Cartel de Zavalla'
+                width={500}
+                height={500}
+                className="image"
+              />
+            </Box>
           </Stack>
           <motion.div
             variants={arrowVariants}
@@ -121,7 +132,7 @@ const Hero = () => {
           >
             <Stack
               as='a'
-              href='#lugares'
+              href='#noticias'
             >
               <Image
                 src='/icons/double-arrow-down.svg'

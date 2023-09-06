@@ -18,6 +18,9 @@ const Whatsapp = () => {
         leftIcon={<RiWhatsappFill size='30px' color='#25D366' />}
         width='fit-content'
         size='lg'
+        as='a'
+        href='https://wa.me/3415416732?text=HOLA'
+        target='_blank'
       >
         Escribinos ahora!
       </Button>

@@ -27,11 +27,10 @@ const NewProjects = () => {
             Noticias de la Comuna
           </Heading>
           <Stack
-            w='100%'
-            gap={12}
             direction='row'
-            wrap='wrap'
+            gap={12}
             justify='center'
+            wrap='wrap'
           >
             {
               NEWS_ITEMS.map((item) => {

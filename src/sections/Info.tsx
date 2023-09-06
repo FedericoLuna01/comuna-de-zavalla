@@ -16,7 +16,7 @@ const Info = () => {
         <Stack
           align='center'
           justify='center'
-          m='20vh'
+          my='20vh'
         >
           <Heading
             as='h1'
@@ -36,7 +36,7 @@ const Info = () => {
               PHONES_ITEMS.map(({ id, title, number, icon }) => (
                 <Stack
                   key={id}
-                  w='400px'
+                  w='350px'
                   direction='row'
                   gap={8}
                   border='2px solid #F2F2F2'
@@ -59,7 +59,7 @@ const Info = () => {
               ))
             }
             <Stack
-              w='400px'
+              w='350px'
               direction='row'
               gap={8}
               border='2px solid #F2F2F2'
@@ -74,7 +74,15 @@ const Info = () => {
                 >
                   Farmacia de turno
                 </Heading>
-                <Text>
+                <Text
+                  as='a'
+                  href='/farmacias-de-turno.jpg'
+                  download
+                  _hover={{
+                    textDecoration: 'underline',
+                    color: 'primary.100'
+                  }}
+                >
                   Descargar horarios
                 </Text>
               </Stack>

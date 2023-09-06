@@ -45,7 +45,7 @@ export const theme = extendTheme({
   components: {
     Link: {
       baseStyle: {
-        fontWeight: 'semibold',
+        fontWeight: 'normal',
         _hover: {
           color: 'primary.100',
           textDecoration: 'underline',

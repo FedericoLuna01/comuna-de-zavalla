@@ -1,10 +1,11 @@
 'use client'
 
-import LicenciaInfo from "@/sections/LicenciaInfo"
 import { Container, Heading, Stack, Text } from "@chakra-ui/react"
 import Image from "next/image"
 
-const page = () => {
+import LicenciaInfo from "@/sections/LicenciaInfo"
+
+export default function LicenciaPage() {
   return (
     <>
       <Stack
@@ -42,7 +43,7 @@ const page = () => {
             </Stack>
             <Stack>
               <Image
-                src='/licencia.jpg'
+                src='/licencia.webp'
                 alt='Acto de inaguracion galpon de licencias de conducir'
                 width={500}
                 height={500}
@@ -57,5 +58,3 @@ const page = () => {
 
   )
 }
-
-export default page

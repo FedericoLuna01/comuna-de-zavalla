@@ -6,7 +6,7 @@ export const INFO_ITEMS = [
   {
     id: 1,
     title: 'Teléfono',
-    label: '+54 9 341 3 15 16 17',
+    label: '0341 497-0038',
     icon: <BsFillTelephoneFill size={40} color='#FEDB27' />,
     href: 'callto:+5493413151617',
   },
@@ -20,7 +20,7 @@ export const INFO_ITEMS = [
   {
     id: 4,
     title: 'Horario',
-    label: 'Lunes a Viernes de 9 a 18hs',
+    label: 'Lunes a Viernes de 7 a 13hs',
     icon: <BsClockFill size={40} color='#EA3D3F' />,
     href: '#contacto',
   }
@@ -53,13 +53,13 @@ export const PHONES_ITEMS = [
   {
     id: 1,
     title: 'Bomberos',
-    number: '100',
+    number: '4970851 o 4970026',
     icon: <PiFireExtinguisherFill color='#C4D42D' size={80} />
   },
   {
     id: 2,
     title: 'Policía',
-    number: '100',
+    number: '4970037',
     icon: <PiPoliceCar color='#C4D42D' size={80} />
   },
 ]
@@ -80,35 +80,35 @@ export const NEWS_ITEMS = [
     title: 'Reformas en el SAMCo.',
     category: 'Salud',
     description: 'A partir de incesantes gestiones, la Comuna de Zavalla logró que pasen a planta provincial dos médicos para la atención en el SAMCo local. Siendo así, los $3.000.000 en fondos que hasta este momento se aportaban desde la Comuna colaborando con las guardias médicas, serán reasignados a la ampliación edilicia del SAMCo. Compartimos imágenes de cómo se llevarán a cabo las reformas del SAMCo Provincial con fondos comunales.',
-    img: '/samco.jpg'
+    img: '/samco.webp'
   },
   {
     id: 2,
     title: 'Secretaria de Salud y Desarrollo Social.',
     category: 'Salud',
     description: 'Luego de la pandemia se inauguró el Centro de Rehabilitación Ramón Carrillo. Se amplió tanto en servicios como ediliciamente. Se incorporaron cuatro nuevos kinesiólogos al servicio de la localidad. El SUM cuenta con más de 80 pacientes que se atienden de mañana y de tarde. Estos servicios son de carácter gratuito, para TODOS.Planificamos, Hacemos y Cumplimos.',
-    img: '/sum.png'
+    img: '/sum.webp'
   },
   {
     id: 3,
     title: 'Pavimentación en Boulevard Teruggi.',
     category: 'Obras',
     description: 'Finalizamos la primera parte de la obra de pavimentación del Bv Teruggi de oeste a este. La misma ya se encuentra habilitada para circular. Continuaremos con la segunda parte. Con compromiso y dedicación, continuamos trabajando.',
-    img: '/pavimentacion.jpg'
+    img: '/pavimentacion.webp'
   },
   {
     id: 4,
     title: 'Transformación de los ex Silos.',
     category: 'Obras',
     description: 'Hermosa jornada la que vivimos. Jóvenes y adultos estuvieron expresando sus propuestas para el gran proyecto: "Transformación del Nuevo Predio Deportivo - Cultural". Este es un nuevo espacio pensado para TODOS los ciudadanos de Zavalla.',
-    img: '/pavimentacion.jpg'
+    img: '/pavimentacion.webp'
   },
   {
     id: 5,
     title: 'LOTEO PÚBLICO - PRIVADO VALENTINI.',
     category: 'Obras',
     description: 'La Comuna de Zavalla comunica la aprobación definitiva del loteo público - privado Valentini. Con mucho esfuerzo y años de trabajo, vecinos y vecinas de nuestra localidad podrán acceder al sueño del terreno propio. En estos 8 años de gestión seguimos cumpliendo. Sumando este nuevo loteo, llegamos al total de 100 familias beneficiadas.',
-    img: '/loteo-valentini.jpg'
+    img: '/loteo-valentini.webp'
   },
 ]
 

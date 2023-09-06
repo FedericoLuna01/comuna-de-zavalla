@@ -34,8 +34,7 @@ const Footer = () => {
                     key={item.id}
                     variant='footer'
                     as="a"
-                    target='_blank'
-                    href={item.href}
+                    href='#contacto'
                   >
                     {item.title}
                   </Link>
@@ -66,6 +65,7 @@ const Footer = () => {
                     variant='footer'
                     as="a"
                     href={item.href}
+                    target='_blank'
                   >
                     {item.title}
                   </Link>
