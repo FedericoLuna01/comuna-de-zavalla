@@ -1,8 +1,8 @@
 'use client'
 
+import { PHONES_ITEMS } from "@/data/data"
 import { Container, Heading, Stack, Text } from "@chakra-ui/react"
-import { BsBusFrontFill } from "react-icons/bs"
-import { GiMedicalPack, GiPoliceBadge } from 'react-icons/gi'
+import { GiMedicalPack } from 'react-icons/gi'
 
 const Info = () => {
   return (
@@ -16,7 +16,7 @@ const Info = () => {
         <Stack
           align='center'
           justify='center'
-          pt='20vh'
+          m='20vh'
         >
           <Heading
             as='h1'
@@ -32,29 +32,34 @@ const Info = () => {
             wrap='wrap'
             gap={12}
           >
-            <Stack
-              maxW='400px'
-              direction='row'
-              gap={8}
-              border='2px solid #F2F2F2'
-              p={6}
-              borderRadius='.7rem'
-            >
-              <BsBusFrontFill color='#C4D42D' size={80} />
-              <Stack>
-                <Heading
-                  as='h3'
-                  fontSize='1.5rem'
+            {
+              PHONES_ITEMS.map(({ id, title, number, icon }) => (
+                <Stack
+                  key={id}
+                  w='400px'
+                  direction='row'
+                  gap={8}
+                  border='2px solid #F2F2F2'
+                  p={6}
+                  borderRadius='.7rem'
                 >
-                  Colectivo
-                </Heading>
-                <Text>
-                  Descargar horarios asdasd asdasdasd
-                </Text>
-              </Stack>
-            </Stack>
+                  {icon}
+                  <Stack>
+                    <Heading
+                      as='h3'
+                      fontSize='1.5rem'
+                    >
+                      {title}
+                    </Heading>
+                    <Text>
+                      Número: {number}
+                    </Text>
+                  </Stack>
+                </Stack>
+              ))
+            }
             <Stack
-              maxW='400px'
+              w='400px'
               direction='row'
               gap={8}
               border='2px solid #F2F2F2'
@@ -71,28 +76,6 @@ const Info = () => {
                 </Heading>
                 <Text>
                   Descargar horarios
-                </Text>
-              </Stack>
-            </Stack>
-            <Stack
-              maxW='400px'
-              direction='row'
-              gap={8}
-              border='2px solid #F2F2F2'
-              p={6}
-              borderRadius='.7rem'
-            >
-              <GiPoliceBadge color='#C4D42D' size={80} />
-              <Stack>
-                <Heading
-                  as='h3'
-                  fontSize='1.5rem'
-                >
-                  Policía
-                </Heading>
-                <Text>
-                  Numero: 101 <br />
-                  Dirección: texto de ejemplo <br />
                 </Text>
               </Stack>
             </Stack>

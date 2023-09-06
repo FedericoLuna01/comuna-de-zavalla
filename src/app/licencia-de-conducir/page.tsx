@@ -31,7 +31,7 @@ const page = () => {
                 fontSize={{ base: '4xl', lg: '6xl' }}
                 lineHeight={1}
               >
-                      Obtené tu licencia de conducir
+                Obtené tu licencia de conducir
               </Heading>
               <Text
                 fontSize={{ base: '1rem', lg: '1.1rem' }}
@@ -43,7 +43,7 @@ const page = () => {
             <Stack>
               <Image
                 src='/licencia.jpg'
-                alt='Grupal'
+                alt='Acto de inaguracion galpon de licencias de conducir'
                 width={500}
                 height={500}
                 className="image"

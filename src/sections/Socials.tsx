@@ -56,8 +56,8 @@ const Socials = () => {
       title='Nuestras redes sociales'
       subtitle="Seguinos en nuestras redes para no perderte ninguna novedad del pueblo."
       direction="row-reverse"
-      image='/Following-amico-1.svg'
-      alt='Following Illustration'
+      image='/socials-illustration.svg'
+      alt='Illustracion de redes sociales'
     >
       <Stack
         direction='row'

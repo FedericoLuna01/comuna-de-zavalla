@@ -1,4 +1,5 @@
 import { Heading, Stack } from "@chakra-ui/react";
+import Image from "next/image";
 import Link from "next/link";
 
 const Logo = () => {
@@ -10,11 +11,11 @@ const Logo = () => {
         direction='row'
         align='center'
       >
-        <Stack
-          w='40px'
-          h='40px'
-          bg='black'
-          borderRadius='10px'
+        <Image
+          src='/logo.png'
+          alt='Logo comuna de zavalla'
+          width={40}
+          height={40}
         />
         <Heading
           fontSize='lg'

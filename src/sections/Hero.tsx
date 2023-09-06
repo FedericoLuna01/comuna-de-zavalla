@@ -1,6 +1,6 @@
 'use client'
 
-import { Button, Heading, Highlight, Stack, Text } from "@chakra-ui/react";
+import { Button, Container, Heading, Highlight, Stack, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -26,109 +26,113 @@ const Hero = () => {
       id='inicio'
       mb='20vh'
     >
-      <Stack
-        minH='100vh'
-        direction={{ base: 'column', md: 'row' }}
-        align='center'
-        justify='center'
-        pos='relative'
+      <Container
+        maxW='container.xl'
       >
         <Stack
-          w={{ base: '100%', md: '50%' }}
+          minH='100vh'
+          direction={{ base: 'column', md: 'row' }}
           align='center'
-          pl='5rem'
+          justify='center'
+          pos='relative'
+          gap={{ base: 10, md: 20 }}
+          py={{ base: '20vh', md: 0 }}
         >
           <Stack
-            maxW='550px'
-            gap={8}
+            w={{ base: '100%', md: '50%' }}
+            align={{ base: 'center', md: 'flex-start' }}
           >
             <Stack
-              gap={0}
+              maxW='550px'
+              gap={8}
+              textAlign={{ base: 'center', md: 'left' }}
+              align={{ base: 'center', md: 'flex-start' }}
             >
-              <Text
-                variant='above-title'
+              <Stack
+                gap={0}
               >
-              Zavalla Crece
-              </Text>
-              <Heading
-                as='h1'
-                fontSize='6xl'
-                lineHeight={1}
-              >
-                <Highlight
-                  query={'Zavalla'}
-                  styles={{
-                    color: 'primary.100',
-                  }}
+                <Text
+                  variant='above-title'
                 >
-                  Bienvenidos a la
-                  Comuna de Zavalla
-                </Highlight>
-              </Heading>
+                Zavalla Crece
+                </Text>
+                <Heading
+                  as='h1'
+                  fontSize={{ base: '5xl', md: '6xl' }}
+                  lineHeight={1}
+                >
+                  <Highlight
+                    query={'Zavalla'}
+                    styles={{
+                      color: 'primary.100',
+                    }}
+                  >
+                    Bienvenidos a la
+                    Comuna de Zavalla
+                  </Highlight>
+                </Heading>
+              </Stack>
+              <Text
+                fontSize='1.1rem'
+              >
+                Zavalla es una localidad del departamento de Rosario, provincia de Santa Fe.
+                Localizada sobre la RN 33, limita al este con la ciudad de Perez, al oeste con Pujato
+                y se encuentra a 22 KM al sudoeste de la ciudad de Rosario.
+              </Text>
+              <Button
+                as='a'
+                href='#'
+                w='fit-content'
+                size='lg'
+                variant='default'
+              >
+                Descubrí más!
+              </Button>
             </Stack>
-            <Text
-              fontSize='1.1rem'
-            >
-              Zavalla es una localidad del departamento de Rosario, provincia de Santa Fe.
-              Localizada sobre la RN 33, limita al este con la ciudad de Perez, al oeste con Pujato
-              y se encuentra a 22 KM al sudoeste de la ciudad de Rosario.
-            </Text>
-            <Button
-              as='a'
-              href='#'
-              w='fit-content'
-              size='lg'
-              variant='default'
-            >
-              Descubrí más!
-            </Button>
           </Stack>
-        </Stack>
-        <Stack
-          w={{ base: '100%', md: '50%' }}
-          align='center'
-        >
-          <Image
-            src='https://images.unsplash.com/photo-1682686580036-b5e25932ce9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1075&q=80'
-            alt='Comuna de Zavalla'
-            width={400}
-            height={400}
-          />
-          <Image
-            src='https://images.unsplash.com/photo-1682686580036-b5e25932ce9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1075&q=80'
-            alt='Comuna de Zavalla'
-            width={400}
-            height={400}
-          />
-          <Image
-            src='https://images.unsplash.com/photo-1682686580036-b5e25932ce9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1075&q=80'
-            alt='Comuna de Zavalla'
-            width={400}
-            height={400}
-          />
-        </Stack>
-        <motion.div
-          variants={arrowVariants}
-          animate='animate'
-          style={{
-            transform: 'translate(0, -50%)',
-            position: 'absolute',
-            bottom: '3rem'
-          }}
-        >
           <Stack
-            as='a'
-            href='#lugares'
+            w={{ base: '100%', md: '50%' }}
+            align={{ base: 'center', md: 'flex-end' }}
+            gap={{ base: 10, md: 20 }}
           >
             <Image
-              src='/icons/double-arrow-down.svg'
-              alt='Scroll down'
-              width={50}
-              height={50}
+              src='/comuna-de-zavalla.jpg'
+              alt='Comuna de Zavalla'
+              width={500}
+              height={500}
+              className="image"
+            />
+            <Image
+              src='/cartel-de-zavalla.jpg'
+              alt='Cartel de Zavalla'
+              width={500}
+              height={500}
+              className="image"
             />
           </Stack>
-        </motion.div>
-      </Stack>
+          <motion.div
+            variants={arrowVariants}
+            animate='animate'
+            style={{
+              transform: 'translate(0, -50%)',
+              position: 'absolute',
+              bottom: '3rem'
+            }}
+          >
+            <Stack
+              as='a'
+              href='#lugares'
+            >
+              <Image
+                src='/icons/double-arrow-down.svg'
+                alt='Scroll down'
+                width={50}
+                height={50}
+              />
+            </Stack>
+          </motion.div>
+        </Stack>
+      </Container>
     </Stack>
   );
 }

@@ -14,7 +14,7 @@ const Navbar = () => {
       borderBottom='2px solid'
       borderColor='primary.100'
       as='header'
-      zIndex='1000'
+      zIndex='99999'
     >
       <Container
         maxW='container.xl'

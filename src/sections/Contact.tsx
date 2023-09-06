@@ -32,7 +32,7 @@ const Contact = () => {
             direction='row'
             divider={<StackDivider />}
             pb={12}
-            gap={8}
+            gap={10}
             wrap='wrap'
             justify='center'
           >
@@ -42,8 +42,7 @@ const Contact = () => {
                   key={id}
                   align='center'
                   justify='center'
-                  maxW='200px'
-                  maxH='180px'
+                  w='270px'
                   textAlign='center'
                 >
                   {icon}

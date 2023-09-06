@@ -1,6 +1,6 @@
 import { BsFillTelephoneFill, BsClockFill } from "react-icons/bs";
 import { FaMapMarkerAlt } from 'react-icons/fa'
-import { HiMail } from 'react-icons/hi'
+import { PiFireExtinguisherFill, PiPoliceCar } from 'react-icons/pi'
 
 export const INFO_ITEMS = [
   {
@@ -9,13 +9,6 @@ export const INFO_ITEMS = [
     label: '+54 9 341 3 15 16 17',
     icon: <BsFillTelephoneFill size={40} color='#FEDB27' />,
     href: 'callto:+5493413151617',
-  },
-  {
-    id: 2,
-    title: 'Email',
-    label: 'correo@correo.com',
-    icon: <HiMail size={40} color='#38CDED' />,
-    href: 'mailto:correo',
   },
   {
     id: 3,
@@ -41,19 +34,34 @@ export const MENU_ITEMS = [
   },
   {
     id: 2,
-    label: 'Lugares',
-    href: '/#lugares',
+    label: 'Noticias',
+    href: '/#noticias',
   },
   {
     id: 3,
-    label: 'Proyectos',
-    href: '/#proyectos',
+    label: 'Licencia',
+    href: '/licencia-de-conducir',
   },
   {
     id: 4,
     label: 'Contacto',
     href: '/#contacto',
   }
+]
+
+export const PHONES_ITEMS = [
+  {
+    id: 1,
+    title: 'Bomberos',
+    number: '100',
+    icon: <PiFireExtinguisherFill color='#C4D42D' size={80} />
+  },
+  {
+    id: 2,
+    title: 'Policía',
+    number: '100',
+    icon: <PiPoliceCar color='#C4D42D' size={80} />
+  },
 ]
 
 export const PLACES_ITEMS = [
@@ -69,8 +77,39 @@ export const PLACES_ITEMS = [
 export const NEWS_ITEMS = [
   {
     id: 1,
-    title: 'Nueva pagina web',
-  }
+    title: 'Reformas en el SAMCo.',
+    category: 'Salud',
+    description: 'A partir de incesantes gestiones, la Comuna de Zavalla logró que pasen a planta provincial dos médicos para la atención en el SAMCo local. Siendo así, los $3.000.000 en fondos que hasta este momento se aportaban desde la Comuna colaborando con las guardias médicas, serán reasignados a la ampliación edilicia del SAMCo. Compartimos imágenes de cómo se llevarán a cabo las reformas del SAMCo Provincial con fondos comunales.',
+    img: '/samco.jpg'
+  },
+  {
+    id: 2,
+    title: 'Secretaria de Salud y Desarrollo Social.',
+    category: 'Salud',
+    description: 'Luego de la pandemia se inauguró el Centro de Rehabilitación Ramón Carrillo. Se amplió tanto en servicios como ediliciamente. Se incorporaron cuatro nuevos kinesiólogos al servicio de la localidad. El SUM cuenta con más de 80 pacientes que se atienden de mañana y de tarde. Estos servicios son de carácter gratuito, para TODOS.Planificamos, Hacemos y Cumplimos.',
+    img: '/sum.png'
+  },
+  {
+    id: 3,
+    title: 'Pavimentación en Boulevard Teruggi.',
+    category: 'Obras',
+    description: 'Finalizamos la primera parte de la obra de pavimentación del Bv Teruggi de oeste a este. La misma ya se encuentra habilitada para circular. Continuaremos con la segunda parte. Con compromiso y dedicación, continuamos trabajando.',
+    img: '/pavimentacion.jpg'
+  },
+  {
+    id: 4,
+    title: 'Transformación de los ex Silos.',
+    category: 'Obras',
+    description: 'Hermosa jornada la que vivimos. Jóvenes y adultos estuvieron expresando sus propuestas para el gran proyecto: "Transformación del Nuevo Predio Deportivo - Cultural". Este es un nuevo espacio pensado para TODOS los ciudadanos de Zavalla.',
+    img: '/pavimentacion.jpg'
+  },
+  {
+    id: 5,
+    title: 'LOTEO PÚBLICO - PRIVADO VALENTINI.',
+    category: 'Obras',
+    description: 'La Comuna de Zavalla comunica la aprobación definitiva del loteo público - privado Valentini. Con mucho esfuerzo y años de trabajo, vecinos y vecinas de nuestra localidad podrán acceder al sueño del terreno propio. En estos 8 años de gestión seguimos cumpliendo. Sumando este nuevo loteo, llegamos al total de 100 familias beneficiadas.',
+    img: '/loteo-valentini.jpg'
+  },
 ]
 
 export const SOCIALS_ITEMS = [
