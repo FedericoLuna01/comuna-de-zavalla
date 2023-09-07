@@ -3,6 +3,7 @@
 import { Box, Button, Container, Heading, Highlight, Stack, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import SideReveal from "@/components/Revealts/SideReveal";
 
 const arrowVariants = {
   animate: {
@@ -42,83 +43,100 @@ const Hero = () => {
             w={{ base: '100%', md: '50%' }}
             align={{ base: 'center', md: 'flex-start' }}
           >
-            <Stack
-              maxW='550px'
-              gap={8}
-              textAlign={{ base: 'center', md: 'left' }}
-              align={{ base: 'center', md: 'flex-start' }}
-            >
+            <SideReveal>
               <Stack
-                gap={0}
+                maxW='550px'
+                gap={8}
+                textAlign={{ base: 'center', md: 'left' }}
+                align={{ base: 'center', md: 'flex-start' }}
               >
-                <Text
-                  variant='above-title'
+                <Stack
+                  gap={0}
                 >
-                Zavalla Crece
-                </Text>
-                <Heading
-                  as='h1'
-                  fontSize={{ base: '5xl', md: '6xl' }}
-                  lineHeight={1}
-                >
-                  <Highlight
-                    query={'Zavalla'}
-                    styles={{
-                      color: 'primary.100',
-                    }}
+                  <Text
+                    variant='above-title'
                   >
+                Zavalla Crece
+                  </Text>
+                  <Heading
+                    as='h1'
+                    fontSize={{ base: '5xl', md: '6xl' }}
+                    lineHeight={1}
+                  >
+                    <Highlight
+                      query={'Zavalla'}
+                      styles={{
+                        color: 'primary.100',
+                      }}
+                    >
                     Bienvenidos a la
                     Comuna de Zavalla
-                  </Highlight>
-                </Heading>
-              </Stack>
-              <Text
-                fontSize='1.1rem'
-              >
+                    </Highlight>
+                  </Heading>
+                </Stack>
+                <Text
+                  fontSize='1.1rem'
+                >
                 Zavalla es una localidad del departamento de Rosario, provincia de Santa Fe.
                 Localizada sobre la RN 33, limita al este con la ciudad de Pérez, al oeste con Pujato
                 y se encuentra a 22 KM al sudoeste de la ciudad de Rosario.
-              </Text>
-              <Button
-                as='a'
-                href='#noticias'
-                w='fit-content'
-                size='lg'
-                variant='default'
-              >
+                </Text>
+                <Button
+                  as='a'
+                  href='#noticias'
+                  w='fit-content'
+                  size='lg'
+                  variant='default'
+                >
                 Descubrí más!
-              </Button>
-            </Stack>
+                </Button>
+              </Stack>
+            </SideReveal>
           </Stack>
+
           <Stack
             w={{ base: '100%', md: '50%' }}
             align={{ base: 'center', md: 'flex-end' }}
             gap={{ base: 10, md: 20 }}
           >
+
             <Box
               aspectRatio={16 / 9}
               width={{ base: '100%', md: '80%' }}
-              position='relative'
+              pos='relative'
             >
-              <Image
-                src='/comuna-de-zavalla.webp'
-                alt='Comuna de Zavalla'
-                fill
-                className="image"
-              />
+              <SideReveal
+                side='right'
+                height="100%"
+                width="100%"
+              >
+                <Image
+                  src='/comuna-de-zavalla.webp'
+                  alt='Comuna de Zavalla'
+                  fill
+                  className="image"
+                />
+              </SideReveal>
+
             </Box>
             <Box
               aspectRatio={16 / 9}
               width={{ base: '100%', md: '80%' }}
-              position='relative'
+              pos='relative'
             >
-              <Image
-                src='/cartel-de-zavalla.webp'
-                alt='Cartel de Zavalla'
-                width={500}
-                height={500}
-                className="image"
-              />
+              <SideReveal
+                side='right'
+                height="100%"
+                width="100%"
+                delayIndex={1}
+              >
+                <Image
+                  src='/cartel-de-zavalla.webp'
+                  alt='Cartel de Zavalla'
+                  fill
+                  className="image"
+                />
+              </SideReveal>
             </Box>
           </Stack>
           <motion.div

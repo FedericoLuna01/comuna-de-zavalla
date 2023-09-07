@@ -105,7 +105,7 @@ export const NEWS_ITEMS = [
   },
   {
     id: 5,
-    title: 'LOTEO PÚBLICO - PRIVADO VALENTINI.',
+    title: 'Loteo público - privado Valentini.',
     category: 'Obras',
     description: 'La Comuna de Zavalla comunica la aprobación definitiva del loteo público - privado Valentini. Con mucho esfuerzo y años de trabajo, vecinos y vecinas de nuestra localidad podrán acceder al sueño del terreno propio. En estos 8 años de gestión seguimos cumpliendo. Sumando este nuevo loteo, llegamos al total de 100 familias beneficiadas.',
     img: '/loteo-valentini.webp'
