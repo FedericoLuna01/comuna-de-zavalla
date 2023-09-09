@@ -101,7 +101,7 @@ export const NEWS_ITEMS = [
     title: 'Transformación de los ex Silos.',
     category: 'Obras',
     description: 'Hermosa jornada la que vivimos. Jóvenes y adultos estuvieron expresando sus propuestas para el gran proyecto: "Transformación del Nuevo Predio Deportivo - Cultural". Este es un nuevo espacio pensado para TODOS los ciudadanos de Zavalla.',
-    img: '/pavimentacion.webp'
+    img: '/silos.webp'
   },
   {
     id: 5,
