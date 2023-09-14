@@ -12,7 +12,7 @@ const Navbar = () => {
       h='75px'
       bg='bg.100'
       borderBottom='2px solid'
-      borderColor='primary.100'
+      borderColor='primary.400'
       as='header'
       zIndex='99999'
     >

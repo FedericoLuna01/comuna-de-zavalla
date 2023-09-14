@@ -20,13 +20,15 @@ export default function ProjectsCard({ title,
 }: ProjectsCardProps) {
   return (
     <Box
-      maxW={'380px'}
+      maxW={'390px'}
       w={'full'}
+      h='full'
       bg={'white'}
       boxShadow={'2xl'}
       rounded={'md'}
       p={6}
       overflow={'hidden'}
+      as='article'
     >
       <Box h={'210px'} bg={'gray.100'} mt={-6} mx={-6} mb={6} pos={'relative'}>
         <Image
@@ -37,7 +39,7 @@ export default function ProjectsCard({ title,
       </Box>
       <Stack>
         <Text
-          color={'primary.100'}
+          color={'primary.400'}
           textTransform={'uppercase'}
           fontWeight={800}
           fontSize={'sm'}
@@ -48,6 +50,7 @@ export default function ProjectsCard({ title,
         <Heading
           color={'gray.800'}
           fontSize={'2xl'}
+          as='h3'
         >
           {title}
         </Heading>
@@ -55,13 +58,6 @@ export default function ProjectsCard({ title,
           {description}
         </Text>
       </Stack>
-      {/* <Stack mt={6} direction={'row'} spacing={4} align={'center'}>
-          <Button
-            variant='default'
-          >
-            Ver más
-          </Button>
-        </Stack> */}
     </Box>
   )
 }

@@ -3,7 +3,7 @@
 import { Box, Button, Container, Heading, Highlight, Stack, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import SideReveal from "@/components/Revealts/SideReveal";
+import SideReveal from "@/components/Reveals/SideReveal";
 
 const arrowVariants = {
   animate: {
@@ -56,7 +56,7 @@ const Hero = () => {
                   <Text
                     variant='above-title'
                   >
-                Zavalla Crece
+                    Zavalla Crece
                   </Text>
                   <Heading
                     as='h1'
@@ -66,7 +66,7 @@ const Hero = () => {
                     <Highlight
                       query={'Zavalla'}
                       styles={{
-                        color: 'primary.100',
+                        color: 'primary.400',
                       }}
                     >
                     Bienvenidos a la
@@ -77,18 +77,18 @@ const Hero = () => {
                 <Text
                   fontSize='1.1rem'
                 >
-                Zavalla es una localidad del departamento de Rosario, provincia de Santa Fe.
-                Localizada sobre la RN 33, limita al este con la ciudad de Pérez, al oeste con Pujato
-                y se encuentra a 22 KM al sudoeste de la ciudad de Rosario.
+                  Zavalla es una localidad del departamento de Rosario, provincia de Santa Fe.
+                  Localizada sobre la RN 33, limita al este con la ciudad de Pérez, al oeste con Pujato
+                  y se encuentra a 22 KM al sudoeste de la ciudad de Rosario.
                 </Text>
                 <Button
                   as='a'
                   href='#noticias'
                   w='fit-content'
                   size='lg'
-                  variant='default'
+                  colorScheme="primary"
                 >
-                Descubrí más!
+                  Descubrí más!
                 </Button>
               </Stack>
             </SideReveal>

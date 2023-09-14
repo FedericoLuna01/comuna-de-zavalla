@@ -34,7 +34,7 @@ const DividerLayout = ({ children, title, subtitle, direction = 'row', image, al
         w='100%'
       >
         <Stack
-          bg='primary.100'
+          bg='primary.400'
           borderRadius='.60rem'
           direction={{ base: direction === 'row' ? 'column' : 'column-reverse', lg: direction }}
           align='center'

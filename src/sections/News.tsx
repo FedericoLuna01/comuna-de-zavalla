@@ -1,10 +1,12 @@
 'use client'
 
-import ProjectsCard from "@/components/ProjectsCard"
-import { NEWS_ITEMS } from "@/data/data"
 import { Container, Heading, Stack } from "@chakra-ui/react"
 
+import NewsGrid from "@/components/NewsGrid"
+import { NEWS_ITEMS } from "@/data/data"
+
 const NewProjects = () => {
+  const newsToDisplay = NEWS_ITEMS.slice(0, 3)
   return (
     <Stack
       id='noticias'
@@ -24,28 +26,9 @@ const NewProjects = () => {
             textDecorationColor='logoYellow.100'
             textAlign='center'
           >
-            Noticias de la Comuna
+              Noticias de la Comuna
           </Heading>
-          <Stack
-            direction='row'
-            gap={12}
-            justify='center'
-            wrap='wrap'
-          >
-            {
-              NEWS_ITEMS.map((item) => {
-                return (
-                  <ProjectsCard
-                    key={item.id}
-                    title={item.title}
-                    category={item.category}
-                    description={item.description}
-                    img={item.img}
-                  />
-                )
-              })
-            }
-          </Stack>
+          <NewsGrid news={newsToDisplay} />
         </Stack>
       </Container>
     </Stack>

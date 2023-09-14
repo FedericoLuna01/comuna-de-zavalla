@@ -1,10 +1,15 @@
-import { Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, Show, Stack, useDisclosure } from "@chakra-ui/react";
+import { Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, Show, Stack, Text, useDisclosure } from "@chakra-ui/react";
+import { GiHamburgerMenu } from "react-icons/gi";
+
 import Menu from "./Menu";
 import Logo from "./Logo";
-import { GiHamburgerMenu } from "react-icons/gi";
 
 const Nav = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
+
+  const handleClick = () => {
+    isOpen ? onClose() : onOpen()
+  }
 
   return (
     <>
@@ -21,13 +26,13 @@ const Nav = () => {
         below='md'
       >
         <Button
-          backgroundColor= 'primary.100'
           size='md'
           borderRadius='md'
-          _hover= {{ brightness: '80%' }}
-          onClick={onOpen}
+          colorScheme="primary"
+          onClick={handleClick}
         >
           <GiHamburgerMenu color='black' size={15} />
+          <Text display='none'>Menu</Text>
         </Button>
         <Drawer
           isOpen={isOpen}

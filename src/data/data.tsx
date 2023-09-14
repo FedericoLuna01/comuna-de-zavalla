@@ -1,3 +1,4 @@
+import { News } from "@/types/types";
 import { BsFillTelephoneFill, BsClockFill } from "react-icons/bs";
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import { PiFireExtinguisherFill, PiPoliceCar } from 'react-icons/pi'
@@ -35,7 +36,7 @@ export const MENU_ITEMS = [
   {
     id: 2,
     label: 'Noticias',
-    href: '/#noticias',
+    href: '/noticias',
   },
   {
     id: 3,
@@ -74,7 +75,7 @@ export const PLACES_ITEMS = [
   }
 ]
 
-export const NEWS_ITEMS = [
+export const NEWS_ITEMS: News[] = [
   {
     id: 1,
     title: 'Reformas en el SAMCo.',
