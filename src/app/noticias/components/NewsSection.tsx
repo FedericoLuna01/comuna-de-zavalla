@@ -9,8 +9,8 @@ import NewsGrid from "@/components/NewsGrid"
 import { NEWS_ITEMS } from "@/data/data"
 
 const NewsSection = () => {
-  const categories: string[] = ['Todas', ...new Set(NEWS_ITEMS.map(item => item.category))]
-  // const categories: string[] = Array.from(new Set(NEWS_ITEMS.map(item => item.category))).unshift('Todas')
+  const categories: string[] = Array.from(new Set(NEWS_ITEMS.map(item => item.category)))
+  categories.unshift('Todas')
 
   const searchParams = useSearchParams()
   const category = searchParams.get('categoria')
