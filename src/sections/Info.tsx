@@ -80,7 +80,7 @@ const Info = () => {
                   download
                   _hover={{
                     textDecoration: 'underline',
-                    color: 'primary.100'
+                    color: 'primary.400'
                   }}
                 >
                   Descargar horarios

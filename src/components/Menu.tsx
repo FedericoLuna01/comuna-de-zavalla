@@ -1,6 +1,7 @@
-import { MENU_ITEMS } from "@/data/data";
 import { Stack, Link as ChakraLink } from "@chakra-ui/react";
 import Link from "next/link";
+
+import { MENU_ITEMS } from "@/data/data";
 
 interface MenuProps {
   direction: 'row' | 'column'
@@ -23,11 +24,12 @@ export const Menu: React.FC<MenuProps> = ({ direction, gap, align, onClick = () 
         {
           MENU_ITEMS.map(({ id, href, label }) => (
             <ChakraLink
-              as={'li'}
+              as={Link}
               key={id}
               onClick={onClick}
+              href={href}
             >
-              <Link href={href}>{label}</Link>
+              {label}
             </ChakraLink>
           ))
         }

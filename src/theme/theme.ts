@@ -20,7 +20,16 @@ export const theme = extendTheme({
   },
   colors: {
     primary: {
-      100: '#C4D42D',
+      50: '#fbfce9',
+      100: '#f7f8cf',
+      200: '#edf2a4',
+      300: '#dde76f',
+      400: '#c4d42d',
+      500: '#adbe24',
+      600: '#879719',
+      700: '#667417',
+      800: '#515c18',
+      900: '#454e19',
     },
     secondary: {
       100: '#F2F2F2',
@@ -47,9 +56,9 @@ export const theme = extendTheme({
       baseStyle: {
         fontWeight: 'normal',
         _hover: {
-          color: 'primary.100',
+          color: 'primary.500',
           textDecoration: 'underline',
-          textDecorationColor: 'primary.100',
+          textDecorationColor: 'primary.500',
         }
       },
       variants: {
@@ -65,7 +74,7 @@ export const theme = extendTheme({
       },
       variants: {
         'above-title': {
-          color: 'primary.100',
+          color: 'primary.400',
           textTransform: 'uppercase',
           fontWeight: 'bold',
         }
@@ -81,17 +90,6 @@ export const theme = extendTheme({
         ':active': {
           filter: 'brightness(0.95)',
           boxShadow: 'none'
-        }
-      },
-      variants: {
-        'default': {
-          background: 'primary.100',
-          ':hover': {
-            background: 'primary.100',
-          },
-          ':active': {
-            filter: 'brightness(0.95)',
-          }
         }
       }
     },
