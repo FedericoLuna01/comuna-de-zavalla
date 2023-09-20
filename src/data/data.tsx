@@ -77,6 +77,13 @@ export const PLACES_ITEMS = [
 
 export const NEWS_ITEMS: News[] = [
   {
+    id: 6,
+    title: 'Estamos renovando la Plaza Central, ya falta menos para que podamos disfrutarla.',
+    category: 'Obras',
+    description: 'Con orgullo y pasión, estamos haciendo una gran transformación. Creando un espacio agradable y seguro donde nuestros hijos y seres queridos puedan compartir momentos inolvidables. Transformando nuestros espacios, también nos transformamos a nosotros mismos, sabiendo que para crecer hay que hacer. Planificamos, Cumplimos y Hacemos.',
+    img: '/plaza-renovada.webp'
+  },
+  {
     id: 1,
     title: 'Reformas en el SAMCo.',
     category: 'Salud',
