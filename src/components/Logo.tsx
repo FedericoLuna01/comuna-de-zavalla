@@ -21,6 +21,7 @@ const Logo = () => {
           fontSize='lg'
           maxW='100px'
           textAlign='center'
+          as='h1'
         >
           Comuna de Zavalla
         </Heading>

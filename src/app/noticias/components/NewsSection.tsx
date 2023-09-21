@@ -57,6 +57,7 @@ const NewsSection = () => {
                     variant='outline'
                     as={Link}
                     href={`/noticias?categoria=${category}`}
+                    scroll={false}
                   >
                     {category}
                   </Button>

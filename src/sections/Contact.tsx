@@ -22,7 +22,7 @@ const Contact = () => {
         >
           <Heading
             variant='title'
-            as='h1'
+            as='h2'
             textDecorationColor='logoPurple.100'
             textAlign='center'
           >

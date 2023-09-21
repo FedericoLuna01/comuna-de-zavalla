@@ -19,7 +19,7 @@ const Info = () => {
           my='20vh'
         >
           <Heading
-            as='h1'
+            as='h2'
             variant='title'
             textDecorationColor='logoBlue.100'
             textAlign='center'

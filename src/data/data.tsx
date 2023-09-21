@@ -77,6 +77,13 @@ export const PLACES_ITEMS = [
 
 export const NEWS_ITEMS: News[] = [
   {
+    id: 7,
+    title: 'Construcción del edificio escolar “E.E.S.O 605°”.',
+    category: 'Educación',
+    description: 'Con una inversión de más de $500.000.000 la concreción de la escuela secundaria es un hecho histórico para nuestro pueblo. La obra es producto del esfuerzo constante de muchas personas que hicieron a la realización de este sueño: directivos, ex directivos, profesoras y profesores, grupos de padres y vecinos. Planificamos, Hacemos y Cumplimos.',
+    img: '/edificio-escolar.webp'
+  },
+  {
     id: 6,
     title: 'Estamos renovando la Plaza Central, ya falta menos para que podamos disfrutarla.',
     category: 'Obras',

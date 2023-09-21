@@ -1,4 +1,5 @@
 import { Grid } from "@chakra-ui/react"
+import { AnimatePresence, motion } from 'framer-motion'
 
 import { type News } from "@/types/types"
 import ProjectsCard from "./ProjectsCard"
@@ -9,23 +10,33 @@ interface NewsGridProps {
 
 const NewsGrid: React.FC<NewsGridProps> = ({ news }) => {
   return (
-    <Grid
-      templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)', lg: 'repeat(3, 1fr)' }}
-      gap={8}
-      alignSelf='center'
-    >
-      {
-        news.map(({ category, description, img, title, id }) => (
-          <ProjectsCard
-            key={id}
-            category={category}
-            description={description}
-            img={img}
-            title={title}
-          />
-        ))
-      }
-    </Grid>
+    <AnimatePresence>
+      <Grid
+        templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)', lg: 'repeat(3, 1fr)' }}
+        gap={8}
+        alignSelf='center'
+      >
+        {
+          news.map(({ category, description, img, title, id }) => (
+            <motion.div
+              key={id}
+              layout
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <ProjectsCard
+                category={category}
+                description={description}
+                img={img}
+                title={title}
+              />
+            </motion.div>
+          ))
+        }
+      </Grid>
+    </AnimatePresence>
   )
 }
 

@@ -99,7 +99,7 @@ export const theme = extendTheme({
           textDecoration: 'underline',
           textUnderlineOffset: 5,
           fontSize: '5xl',
-          marginBottom: '5rem',
+          marginBottom: '2rem',
         }
       }
     }

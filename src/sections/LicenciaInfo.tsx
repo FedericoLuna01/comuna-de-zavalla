@@ -15,7 +15,7 @@ const LicenciaInfo = () => {
           pb='20vh'
         >
           <Heading
-            as='h1'
+            as='h2'
             variant='title'
             textDecorationColor='logoPurple.100'
             textAlign='center'
