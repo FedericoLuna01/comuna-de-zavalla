@@ -76,7 +76,7 @@ const Info = () => {
                 </Heading>
                 <Text
                   as='a'
-                  href='/farmacias-de-turno.jpg'
+                  href='/farmacias-de-turno-octubre.jpg'
                   download
                   _hover={{
                     textDecoration: 'underline',
