@@ -65,17 +65,35 @@ export const PHONES_ITEMS = [
   },
 ]
 
-export const PLACES_ITEMS = [
-  {
-    id: 1,
-    title: 'Parque villarino',
-    ubication: '',
-    description: 'Ocupa 100 hectareas. Es un lugar de recreacion, un espacio que se destaca por su biodiversidad. Las arboledas estas conformadas por 160 especies y diversidad de aves. Se puede visitar de lunes a domingos de 6am a 20pm. En el predio del parque se encuentran la Facultad de Ciencias Agrarias y la Escuela Primaria N° 6371',
-    image: ''
-  }
-]
-
 export const NEWS_ITEMS: News[] = [
+  {
+    id: 11,
+    title: 'Continuamos con las Charlas de Prevención: "Digamos NO a las drogas"',
+    category: 'Educación',
+    description: 'Estuvimos en la escuela Joaquina Villarino de Soage N 6371, donde interactuamos con los alumnos de 7mo grado sobre la problemática. El objetivo del encuentro fue informar y concientizar sobre la problemática del consumo de sustancias, haciendo énfasis en abocarse a actividades deportivas como recreativas en pos de reflotar los valores para una vida sana y sin adicciones.',
+    img: '/no-drogas.webp'
+  },
+  {
+    id: 10,
+    title: 'Producción y Empleo',
+    category: 'Obras',
+    description: 'Gracias al Ministro Sergio Massa, Zavalla tiene en marcha tres obras que impactan beneficiosamente en la Economía de nuestro pueblo: Obra de Cloacas y Saneamiento Ambiental, Almacén Agroecológico y Molino Agroecológico. Con estos beneficios, se crearon 20 puestos de trabajo de forma directa. Esto nutre el movimiento comercial de empresas locales. Planificamos, Hacemos y Cumplimos.',
+    img: '/produccion-empleo.webp'
+  },
+  {
+    id: 9,
+    title: 'Zavalla Recicla.',
+    category: 'Obras',
+    description: 'La Comuna recicla el 100% de los Residuos Urbanos (verdes, derivados de la poda y escamonda). En 1 año de gestión de residuos, ingresaron al Predio 1.124 Camiones. Se reclicaron: Cartón 9.336 Kilos. Plásticos 16.164 Kilos. Chatarra 23.052 Kilos. Cubiertas 160 Unidades. Madera 21.350 Kilos. Beneficiando la Economía Circular.',
+    img: '/zavalla-recicla.webp'
+  },
+  {
+    id: 8,
+    title: 'Grandes cambios para el SAMCo.',
+    category: 'Salud',
+    description: 'Prontamente la Comuna con fondos propios estará comenzando la ampliación y modernización del SAMCO Provincial, es por ello que se ha removido el consultorio modular que se encontraba en el frente del edificio. Este importante aporte de la Comuna, se realiza con fondos locales y con la decisión de la Gestión actual, siendo que el SAMCO en su infraestructura y atención primaria es responsabilidad del Gobierno Provincial. Agradecemos a Alejandro Anisetti y su familia profundamente, por la colaboración con el consultorio móvil utilizado por los y las zavallenses durante todo este tiempo.',
+    img: '/samco.webp'
+  },
   {
     id: 7,
     title: 'Construcción del edificio escolar “E.E.S.O 605°”.',
@@ -89,13 +107,6 @@ export const NEWS_ITEMS: News[] = [
     category: 'Obras',
     description: 'Con orgullo y pasión, estamos haciendo una gran transformación. Creando un espacio agradable y seguro donde nuestros hijos y seres queridos puedan compartir momentos inolvidables. Transformando nuestros espacios, también nos transformamos a nosotros mismos, sabiendo que para crecer hay que hacer. Planificamos, Cumplimos y Hacemos.',
     img: '/plaza-renovada.webp'
-  },
-  {
-    id: 1,
-    title: 'Reformas en el SAMCo.',
-    category: 'Salud',
-    description: 'A partir de incesantes gestiones, la Comuna de Zavalla logró que pasen a planta provincial dos médicos para la atención en el SAMCo local. Siendo así, los $3.000.000 en fondos que hasta este momento se aportaban desde la Comuna colaborando con las guardias médicas, serán reasignados a la ampliación edilicia del SAMCo. Compartimos imágenes de cómo se llevarán a cabo las reformas del SAMCo Provincial con fondos comunales.',
-    img: '/samco.webp'
   },
   {
     id: 2,

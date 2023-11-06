@@ -35,6 +35,10 @@ export default function ProjectsCard({ title,
           src={img}
           fill
           alt={title}
+          style={{
+            objectFit: 'cover',
+            objectPosition: 'center'
+          }}
         />
       </Box>
       <Stack>
