@@ -67,6 +67,48 @@ export const PHONES_ITEMS = [
 
 export const NEWS_ITEMS: News[] = [
   {
+    id: 17,
+    title: '¡SANEAMIENTO AMBIENTAL CLOACAS!',
+    category: 'Obras',
+    description: 'La Comuna de Zavalla comunica una obra histórica para la vida del pueblo.Nos encontramos ante un hecho que mejora nuestra vida y la de las próximas generaciones.La obra de cloaca, con una inversión de $1.100.000.000 es una realidad.Presentamos al pueblo los piletones de saneamiento ambiental cuyo movimiento de suelo se encuentra terminado.Planificamos, Hacemos, Cumplimos.',
+    img: '/cloacas.webp'
+  },
+  {
+    id: 16,
+    title: 'Helicóptero UTV',
+    description: 'La Comuna de Zavalla tiene contratado el servicio de helicóptero UTV desde el mes de Julio a esta parte, capacitando a la empresa contratada a personal de bomberos y de salud de nuestra comunidad.Comunicamos así la valiosa labor que gestionó la Comuna, fortaleciendo la salud del pueblo. Este servicio actúa en emergencias para toda la comunidad de Zavalla.',
+    category: 'Salud',
+    img: '/helicoptero.webp'
+  },
+  {
+    id: 15,
+    title: '¡Fumigación de mosquitos!',
+    category: 'Salud',
+    description: 'Continuamos con el cronograma de tratamiento de mosquitos y vectores.Fumigamos para evitar la transmisión de enfermedades. Colaborá cortando tu césped, limpiando utensilios donde se pueda acumular agua.Seguimos avanzando',
+    img: '/fumigacion.webp'
+  },
+  {
+    id: 14,
+    title: 'Continuamos trabajando en lo que será el "Almacén Agroecológico"',
+    category: 'Obras',
+    description: 'En esta primera etapa se trabajó en la colocación de los cimientos del ALMACÉN AGROECOLÓGICO Y LA FÁBRICA DE FIDEOS.El origen del proyecto es potenciar la producción y la posibilidad de nuevos PUESTOS DE TRABAJO PARA LOS ZAVALLENSES.El futuro Almacén, articulado entre la Comuna, la Cooperativa de trabajo de Zavalla y la Cooperativa de trabajo agroecológica por mujeres de Zavalla limitada, generará valor agregado a la producción primaria del periurbano, tanto local como de zonas aledañas. A través de la elaboración y fraccionado de harinas, sémolas y legumbres se genera empleo local, especialmente centrado en la perspectiva de género.• Promovemos la producción de productos agroecológicos de calidad y a un precio accesible para el consumidor.• Fomentamos la producción agroecológica local y de zonas aledañas.',
+    img: '/almacen-agroecologico.webp'
+  },
+  {
+    id: 13,
+    title: '¡Continuamos con más calles de hormigón!',
+    category: 'Obras',
+    description: 'Estuvimos trabajando en la ochava de calle Illia y San Martín. Seguimos avanzando y transformando nuestro pueblo.Zavalla crece.',
+    img: '/obras-pavimentacion.webp'
+  },
+  {
+    id: 12,
+    title: 'Se instaló 4 puntos verdes en los distintos barrios de Zavalla.',
+    category: 'Obras',
+    description: 'El objetivo es implementar acciones que disminuyan el impacto ambiental y social producido por los residuos.Desde la Comuna se invita a los vecinos a sumarse al reciclado y ser actor del cuidado del medio ambiente. Los Puntos Verdes se encuentran en: San Martin y Villarino (Plaza Central), Teruggi y Villarino, French y Villarino, Teruggi y Las Palmeras (Barrio Punta Chacra). Identificación: Verde: Plásticos (Botellas y Bidones), Amarillo: Vidrios y Aluminios (Botellas, Frascos, Aerosoles y Latas de Bebidas), Azul: Cartón (Papel).Planificamos, Hacemos y Cumplimos.',
+    img: '/reciclaje.webp'
+  },
+  {
     id: 11,
     title: 'Continuamos con las Charlas de Prevención: "Digamos NO a las drogas"',
     category: 'Educación',
