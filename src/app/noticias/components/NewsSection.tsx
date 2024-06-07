@@ -66,7 +66,6 @@ const NewsSection = () => {
                   as={Link}
                   href={`/noticias?categoria=${category}`}
                   scroll={false}
-                  onClick={() => setCurrentPage(0)}
                 >
                   {category}
                 </Button>
@@ -96,12 +95,6 @@ const NewsSection = () => {
             containerClassName={"pagination"}
             activeClassName={"active"}
             pageClassName={"page"}
-            previousClassName={"previous"}
-            nextClassName={"next"}
-            pageLinkClassName={"page-link"}
-            previousLinkClassName={"previous-link"}
-            nextLinkClassName={"next-link"}
-            activeLinkClassName={"active-link"}
           />
         </Stack>
       </Container>
