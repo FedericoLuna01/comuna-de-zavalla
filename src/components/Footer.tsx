@@ -13,6 +13,7 @@ const ListHeader = ({ children }: { children: React.ReactNode }) => {
 }
 
 const Footer = () => {
+  const year = new Date().getFullYear()
   return (
     <Stack
       bg='bg.100'
@@ -95,8 +96,8 @@ const Footer = () => {
           <Logo />
         </Flex>
         <Text pt={6} fontSize={'sm'} textAlign={'center'}>
-          © 2023 Todos los derechos reservados. Comuna de Zavalla | Diseño y desarrollo{' '}
-          <Link href='https://cuppypaginasweb.com' target="_blank">Cuppy páginas web</Link>
+          © {year} Todos los derechos reservados. Comuna de Zavalla | Diseño y desarrollo{' '}
+          <Link href='https://cuppyagenciaweb.com' target="_blank">Cuppy Agencia Web</Link>
         </Text>
 
       </Box>
